@@ -5,81 +5,95 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-ibm-plex-sans: IBM Plex Sans, sans-serif;
-  --font-bebas-neue: var(--bebas-neue);
+  --font-ibm-plex-sans: IBM Plex Sans, sans-serif; /* font-ibm-plex-sans */
+  --font-bebas-neue: var(--bebas-neue); /* font-bebas-neue */
 
-  --color-background: hsl(var(--background));
-  --color-foreground: hsl(var(--foreground));
+  --color-background: hsl(var(--background)); /* bg-background */
+  --color-foreground: hsl(var(--foreground)); /* text-foreground */
 
-  --color-card: hsl(var(--card));
-  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card: hsl(var(--card)); /* bg-card */
+  --color-card-foreground: hsl(
+    var(--card-foreground)
+  ); /* text-card-foreground */
 
-  --color-popover: hsl(var(--popover));
-  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover: hsl(var(--popover)); /* bg-popover */
+  --color-popover-foreground: hsl(
+    var(--popover-foreground)
+  ); /* text-popover-foreground */
 
-  --color-secondary: hsl(var(--secondary));
-  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-secondary: hsl(var(--secondary)); /* bg-secondary */
+  --color-secondary-foreground: hsl(
+    var(--secondary-foreground)
+  ); /* text-secondary-foreground */
 
-  --color-muted: hsl(var(--muted));
-  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-muted: hsl(var(--muted)); /* bg-muted */
+  --color-muted-foreground: hsl(
+    var(--muted-foreground)
+  ); /* text-muted-foreground */
 
-  --color-accent: hsl(var(--accent));
-  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-accent: hsl(var(--accent)); /* bg-accent */
+  --color-accent-foreground: hsl(
+    var(--accent-foreground)
+  ); /* text-accent-foreground */
 
-  --color-destructive: hsl(var(--destructive));
-  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-destructive: hsl(
+    var(--destructive)
+  ); /* text-destructive, bg-destructive */
+  --color-destructive-foreground: hsl(
+    var(--destructive-foreground)
+  ); /* text-destructive-foreground, bg-destructive-foreground */
 
-  --color-border: hsl(var(--border));
-  --color-input: hsl(var(--input));
-  --color-ring: hsl(var(--ring));
+  --color-border: hsl(var(--border)); /* text-border, bg-border */
+  --color-input: hsl(var(--input)); /* text-input, bg-input */
+  --color-ring: hsl(var(--ring)); /* text-ring, bg-ring */
 
-  --color-chart-1: hsl(var(--chart-1));
-  --color-chart-2: hsl(var(--chart-2));
-  --color-chart-3: hsl(var(--chart-3));
-  --color-chart-4: hsl(var(--chart-4));
-  --color-chart-5: hsl(var(--chart-5));
+  --color-chart-1: hsl(var(--chart-1)); /* text-chart-1, bg-chart-1 */
+  --color-chart-2: hsl(var(--chart-2)); /* text-chart-2, bg-chart-2 */
+  --color-chart-3: hsl(var(--chart-3)); /* text-chart-3, bg-chart-3 */
+  --color-chart-4: hsl(var(--chart-4)); /* text-chart-4, bg-chart-4 */
+  --color-chart-5: hsl(var(--chart-5)); /* text-chart-5, bg-chart-5 */
 
-  --color-primary: #e7c9a5;
-  --color-primary-admin: #25388c;
+  --color-primary: #e7c9a5; /* text-primary, bg-primary */
+  --color-primary-admin: #25388c; /* text-primary-admin, bg-primary-admin */
 
-  --color-green-100: #ecfdf3;
-  --color-green-400: #4c7b62;
-  --color-green-500: #2cc171;
-  --color-green-800: #027a48;
-  --color-green: #027a48;
+  --color-green-100: #ecfdf3; /* text-green-100, bg-green-100 */
+  --color-green-400: #4c7b62; /* text-green-400, bg-green-400 */
+  --color-green-500: #2cc171; /* text-green-500, bg-green-500 */
+  --color-green-800: #027a48; /* text-green-800, bg-green-800 */
+  --color-green: #027a48; /* text-green, bg-green */
 
-  --color-red-400: #f46f70;
-  --color-red-500: #e27233;
-  --color-red-800: #ef3a4b;
-  --color-red: #ef3a4b;
+  --color-red-400: #f46f70; /* text-red-400, bg-red-400 */
+  --color-red-500: #e27233; /* text-red-500, bg-red-500 */
+  --color-red-800: #ef3a4b; /* text-red-800, bg-red-800 */
+  --color-red: #ef3a4b; /* text-red, bg-red */
 
-  --color-blue-100: #0089f1;
+  --color-blue-100: #0089f1; /* text-blue-100, bg-blue-100 */
 
-  --color-light-100: #d6e0ff;
-  --color-light-200: #eed1ac;
-  --color-light-300: #f8f8ff;
-  --color-light-400: #edf1f1;
-  --color-light-500: #8d8d8d;
-  --color-light-600: #f9fafb;
-  --color-light-700: #e2e8f0;
-  --color-light-800: #f8fafc;
+  --color-light-100: #d6e0ff; /* text-light-100, bg-light-100 */
+  --color-light-200: #eed1ac; /* text-light-200, bg-light-200 */
+  --color-light-300: #f8f8ff; /* text-light-300, bg-light-300 */
+  --color-light-400: #edf1f1; /* text-light-400, bg-light-400 */
+  --color-light-500: #8d8d8d; /* text-light-500, bg-light-500 */
+  --color-light-600: #f9fafb; /* text-light-600, bg-light-600 */
+  --color-light-700: #e2e8f0; /* text-light-700, bg-light-700 */
+  --color-light-800: #f8fafc; /* text-light-800, bg-light-800 */
 
-  --color-dark-100: #16191e;
-  --color-dark-200: #3a354e;
-  --color-dark-300: #232839;
-  --color-dark-400: #1e293b;
-  --color-dark-500: #0f172a;
-  --color-dark-600: #333c5c;
-  --color-dark-700: #464f6f;
-  --color-dark-800: #1e2230;
+  --color-dark-100: #16191e; /* text-dark-100, bg-dark-100 */
+  --color-dark-200: #3a354e; /* text-dark-200, bg-dark-200 */
+  --color-dark-300: #232839; /* text-dark-300, bg-dark-300 */
+  --color-dark-400: #1e293b; /* text-dark-400, bg-dark-400 */
+  --color-dark-500: #0f172a; /* text-dark-500, bg-dark-500 */
+  --color-dark-600: #333c5c; /* text-dark-600, bg-dark-600 */
+  --color-dark-700: #464f6f; /* text-dark-700, bg-dark-700 */
+  --color-dark-800: #1e2230; /* text-dark-800, bg-dark-800 */
 
-  --color-gray-100: #cbd5e1;
+  --color-gray-100: #cbd5e1; /* text-gray-100, bg-gray-100 */
 
   --breakpoint-xs: 480px;
 
-  --radius-lg: var(--radius);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-sm: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius); /* rounded-lg */
+  --radius-md: calc(var(--radius) - 2px); /* rounded-md */
+  --radius-sm: calc(var(--radius) - 4px); /* rounded-sm */
 
   --background-image-pattern: url("/images/pattern.webp");
 }
